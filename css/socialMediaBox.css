@@ -23,7 +23,7 @@
     .socialMediaBox a {
         display: block;
         text-align: center;
-        font-size: 0;
+        font-size: 0vh;
     }
 
     .socialMediaBox i {
