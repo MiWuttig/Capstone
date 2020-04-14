@@ -23,6 +23,11 @@
     .socialMediaBox a {
         display: block;
         text-align: center;
+        font-size: 0;
+    }
+    
+    .socialMediaBox i {
+        margin: 0.7vh;
         font-size: 3vh;
     }
 }
