@@ -288,6 +288,10 @@ form textarea{
     margin: 5px auto;
 }
 
+#SocialMedia a {
+    font-size: 0;
+}
+
 #SocialMedia i {
     font-size: 30px;
     color: #1b1b1b;
