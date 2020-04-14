@@ -4,15 +4,18 @@
 
 @media screen and (min-width: 768px) {
     .socialMediaBox {
-        z-index: 2;
+        z-index: 1000;
         display: block;
         position: fixed;
         top: 60%;
-        right: 0;
+        right: -3px;
         width: 3%;
 
-        background-color: #ffffff;
+        background-color: #eff8ef;
         border-left: solid 1px #808d21;
+        border-top: solid 1px #808d21;
+        border-bottom: solid 1px #808d21;
+        border-radius: 3px;
 
         -webkit-transition: 0.5s ease;
         -moz-transition: 0.5s ease;

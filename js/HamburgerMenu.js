@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 function onScroll() {
     if (window.pageYOffset >= 200){
-        $( ".StickyHeader" ).css("background-color" , "#ffffff");
+        $( ".StickyHeader" ).css("background-color" , "#eff8ef");
         $( ".StickyHeader" ).css("border-bottom" , "1px solid #808d21");
     } else {
         $( ".StickyHeader" ).css("background-color" , "transparent");

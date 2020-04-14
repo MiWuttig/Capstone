@@ -120,7 +120,7 @@ section {
 #About:before, #Offer:before, #Booking:before, #Contact:before {
     display: block; 
     content: ""; 
-    height: 3.5vh; 
+    height: 6vh; 
     visibility: hidden; 
 }
 
@@ -235,8 +235,8 @@ footer p {
 
 #ContactFormularContainer, #Adress, #DAV, #Mail, #Phone, #SocialMedia {
     background-color: #e8eee863;
-    border-left: solid 1px #808d21;
-    border-right: solid 1px #808d21;
+    border: solid 1px #808d21;
+    border-radius: 3px;
     
     text-align: center;
     padding: 10px;
@@ -341,6 +341,11 @@ form textarea{
         display: block;
     }
 
+    div.vPrint {
+        max-height: 50px;
+        height: auto;
+    }
+
     h1.vPrint * {
         display: inline-block;
     }
@@ -349,5 +354,10 @@ form textarea{
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    #SocialMedia {
+        visibility: hidden;
+        display: none;
     }
 }
