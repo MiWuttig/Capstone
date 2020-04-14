@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>       
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/Stylesheet_Main_One.css"/>
+        <link rel="stylesheet" type="text/css" href="css/Bootstrap3CarouselGroups.css"/>
+        <link rel="stylesheet" type="text/css" href="css/HamburgerMenu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/socialMediaBox.css"/>
+	  
+		<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/2d23dd2f13.js" crossorigin="anonymous"></script>
+        <script src="js/Bootstrap.js"></script>
+        <script src="js/Bootstrap3CarouselGroups.js"></script>
+        <script src="js/HamburgerMenu.js"></script>
+
+        <title>MountainDiscovery.com</title>
+        <link rel="icon" type="image/png" href="images/Logo3.png"/>
+	</head>
+
+	<body onscroll="onScroll()">
+        <a class="skip-link-screen-reader-text" href="#page-content">Zum Inhalt springen</a>
+
+        
+		<header class="StickyHeader">
+			<h1 id="test" class="vPrint">
+                <img src="images/Logo2.png" alt="Mountain Discovery Logo">
+                <a href="#Home">MountainDiscovery.com</a>
+            </h1>
+			<nav>
+                <div id="Hamburger" onclick="OpenHamburger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+		    	    <li><a href="#Home" onclick="OpenHamburger('closed')">Home</a></li>
+                    <li><a href="#Offer" onclick="OpenHamburger('closed')">Offer</a></li>
+                    <li><a href="#About" onclick="OpenHamburger('closed')">About Me</a></li>
+                    <li><a href="#Booking" onclick="OpenHamburger('closed')">Courses/Tours</a></li>
+                    <li><a href="#Contact" onclick="OpenHamburger('closed')">Contact</a></li>
+                </ul>
+		    </nav>
+        </header>
+        
+        <aside class="socialMediaBox">
+            <a href="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            <a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </aside>
+
+        <main>
+            <!-- Header with Welcome and background Image -->
+            <div id="Home" class="HeaderImg">
+                <h2>
+                    <a>John Smith</a>
+                    Mountain Guide
+                </h2>
+                <div class="header-separator">
+                    <!-- the crazy triangulars -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 7.5" preserveAspectRatio="none" fill="#ffffff">
+                        <path class="svg-white-bg" d="M0,7.5 L0,0 L75,7.5 L100,0 L100,7.5 z"/>
+                    </svg>
+                </div>
+            </div>
+
+    		<section id = "Offer">
+                <h2>Offer</h2>
+
+	    		<div id="OfferCarousel" class="carousel slide" data-ride="carousel" data-interval="false">                 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div id="OfferCarouselGroup1"  class="item active CarouselGroupDiv GroupSize1">
+                            <article id="SkiTouring" class="ArticleDiv">        
+                                <img src="images/ski-tour.jpg" alt="Ski Touring in Alpes">
+                                <h3>Ski Touring</h3>
+                                <p>
+                                    Ski touring is skiing in the backcountry on unmarked or unpatrolled areas. Touring is typically done off-piste and outside of ski resorts, 
+                                    and may extend over a period of more than one day. It is similar to backcountry skiing.
+                                    Ski touring combines elements of Nordic and alpine skiing and embraces such sub-disciplines as Telemark and randonnée. 
+                                    A defining characteristic is that the skier's heels are "free" – i.e. not bound to the skis – 
+                                    in order to allow a natural gliding motion while traversing and ascending terrain which may range from perfectly flat to extremely steep.
+                                    Ski touring has been adopted by skiers seeking new snow, by alpinists, and by those wishing to avoid the high costs of traditional alpine skiing at resorts. 
+                                    Touring requires independent navigation skills and may involve route-finding through potential avalanche terrain. It has parallels with hiking and wilderness backpacking. 
+                                    Ski mountaineering is a form of ski touring which variously combines the sports of Telemark, alpine, and backcountry skiing with that of mountaineering.
+                                </p>
+                            </article>
+                        </div> 
+                        <div id="OfferCarouselGroup2"  class="item CarouselGroupDiv GroupSize1">
+                            <article id="SnowShoe" class="ArticleDiv">        
+                                <img src="images/snow-shoe.jpg" alt="Snow Shoe Hike in Kleinwalsertal">
+                                <h3>Snow Shoe Hiking</h3>
+                                <p>
+                                    A snowshoe is footwear for walking over snow. Snowshoes work by distributing the weight of the person over a larger area so that the person's 
+                                    foot does not sink completely into the snow, a quality called "flotation". Snowshoeing is a form of hiking.
+                                    Traditional snowshoes have a hardwood frame with rawhide lacings. Some modern snowshoes are similar, but most are made of materials such as lightweight metal, 
+                                    plastic, and synthetic fabric. In addition to distributing the weight, snowshoes are generally raised at the toe for maneuverability. 
+                                    They must not accumulate snow, hence the latticework, and require bindings to attach them to the feet.
+                                    In the past, snowshoes were essential tools for fur traders, trappers and anyone whose life or living depended on the ability to get around in areas of deep and frequent snowfall, 
+                                    and they remain necessary equipment for forest rangers and others who must be able to get around areas inaccessible to motorized vehicles when the snow is deep. However, 
+                                    snowshoes are mainly used today for recreation, primarily by hikers and runners who like to continue their hobby in wintertime. 
+                                </p>
+                            </article>
+                        </div> 
+                        <div id="OfferCarouselGroup3" class="item CarouselGroupDiv GroupSize1">
+                            <article id="Canyoning" class="ArticleDiv">
+                                <img src="images/Canyoning1.jpg" alt="Canyoning in Alpes">
+                                <h3>Canyoning</h3>
+                                <p>
+                                    Canyoning is travelling in canyons using a variety of techniques that may include other outdoor activities such as walking, scrambling, climbing, jumping, abseiling (rappelling), and swimming.
+                                    Although non-technical descents such as hiking down a canyon (canyon hiking) are often referred to as canyoneering, the terms canyoning and canyoneering are more often associated with technical descents — 
+                                    those that require abseils (rappels) and ropework, technical climbing or down-climbing, technical jumps, and/or technical swims.
+                                    Canyoning is frequently done in remote and rugged settings and often requires navigational, route-finding, and other wilderness travel skills.
+                                    Canyons that are ideal for canyoning are often cut into the bedrock stone, forming narrow gorges with numerous drops, beautifully sculpted walls, 
+                                    and sometimes spectacular waterfalls. Most canyons are cut into limestone, sandstone, granite, or basalt, though other rock types are found. Canyons can be very easy or extremely difficult, 
+                                    though emphasis in the sport is usually on aesthetics and fun rather than pure difficulty.
+                                </p>
+                            </article>
+                        </div>
+                        <div id="OfferCarouselGroup4"  class="item CarouselGroupDiv GroupSize1">
+                            <article id="Climbing" class="ArticleDiv">
+                                <img src="images/Climbing2.jpg" alt="Climbing at Sardinia">
+                                <h3>Sport Climbing</h3>
+                                <p>
+                                    Climbing is the activity of using one's hands, feet, or any other part of the body to ascend a steep topographical object. It is done for locomotion, 
+                                    recreation and competition, and within trades that rely on ascension; such as emergency rescue and military operations. It is done indoors and out, on natural and man-made structures.
+                                    Professional mountain guides or rock climbing guides, such as members of the IFMGA, have been known to be a historically significant element of developing the popularity of the sport in the natural environment, and remain so today.
+                                    Climbing will be an official sport for the first time in the Olympic Games in 2021. It has been delayed due to the coronavirus pandemic. It takes place in Tokyo (see Sport climbing at the 2020 Summer Olympics).
+                                    Bouldering: Ascending boulders or small outcrops, often with climbing shoes and a chalk bag or bucket. Usually, instead of using a safety rope from above, injury is avoided using a crash pad and a human spotter 
+                                    (to direct a falling climber on to the pad. They can also give beta, or advice).
+                                </p>
+                            </article>
+                        </div> 
+                        <div id="OfferCarouselGroup5" class="item CarouselGroupDiv GroupSize1">
+                            <article id="MountainBiking" class="ArticleDiv">
+                                <img src="images/mountainbiking1.jpg" alt="Mountain Biking">
+                                <h3>Mountain Biking</h3>
+                                <p>
+                                    Mountain biking is a sport of riding bicycles off-road, often over rough terrain, using specially designed mountain bikes. 
+                                    Mountain bikes share similarities with other bikes but incorporate features designed to enhance durability and performance in rough terrain. 
+                                    Mountain biking can generally be broken down into multiple categories: cross country, trail riding, all mountain, downhill, freeride and dirt jumping.
+                                    This sport requires endurance, core strength and balance, bike handling skills, and self-reliance. Advanced riders pursue both steep technical descents and high incline climbs. 
+                                    In the case of freeride, downhill, and dirt jumping, aerial maneuvers are performed off both natural features and specially constructed jumps and ramps.
+                                    Mountain bikers ride on off-road trails such as singletrack, back-country roads, wider bike park trails, fire roads, and some advanced trails are designed with jumps, berms, and drop-off to add excitement to the trail. 
+                                    Riders with enduro and downhill bikes will often visit ski resorts that stay open in the summer to ride downhill specific trails.
+                                </p>
+                            </article>
+                        </div>
+                    </div>  <!-- carousel-inner -->
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#OfferCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#OfferCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id = "About">
+                <h2>About Me</h2>
+
+	    		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">                 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div id="AboutCarouselGroup1"  class="item active CarouselGroupDiv GroupSize1">
+                            <article id="Me" class="ArticleDiv">        
+                                <img src="images/JohnSmith.jpg" alt="John Smith">
+                                <h3>Me</h3>
+                                <p>
+                                    Ski touring is skiing in the backcountry on unmarked or unpatrolled areas. Touring is typically done off-piste and outside of ski resorts, 
+                                    and may extend over a period of more than one day. It is similar to backcountry skiing.
+                                    Ski touring combines elements of Nordic and alpine skiing and embraces such sub-disciplines as Telemark and randonnée. 
+                                    A defining characteristic is that the skier's heels are "free" – i.e. not bound to the skis – 
+                                    in order to allow a natural gliding motion while traversing and ascending terrain which may range from perfectly flat to extremely steep.
+                                    Ski touring has been adopted by skiers seeking new snow, by alpinists, and by those wishing to avoid the high costs of traditional alpine skiing at resorts. 
+                                    Touring requires independent navigation skills and may involve route-finding through potential avalanche terrain. It has parallels with hiking and wilderness backpacking. 
+                                    Ski mountaineering is a form of ski touring which variously combines the sports of Telemark, alpine, and backcountry skiing with that of mountaineering.
+                                </p>
+                            </article>
+                        </div> 
+                        <div id="AboutCarouselGroup2"  class="item CarouselGroupDiv GroupSize1">
+                            <article id="IFMGA" class="ArticleDiv">        
+                                <img src="images/ifmga-logo-trans.png" alt="IFMGA Logo">
+                                <h3>IFMGA Certified</h3>
+                                <p>
+                                    An IFMGA-certified mountain guide is a professional whose competence has been certified by an official institution that is accredited by the IFMGA. 
+                                    He/she may lead, instruct, advise and coach members of the public in the four disciplines of mountaineering, ski touring, rock climbing and ice climbing.
+                                    To ensure that this is done as safely and responsibly as possible, the IFMGA has a training scheme that sets a common worldwide standard in the four disciplines.
+                                    Recognising that individual countries may have their own individual requirements as regards the training of their own mountain guides, 
+                                    a degree of autonomy exists within the IFMGA Training Scheme. While the scheme covers technical skills in depth, the IFMGA attaches equal importance to the non-technical 
+                                    or “soft” skills of a mountain guide. Also, each and every IFMGA-certified mountain guide is expected to observe the Code of Professional Conduct. 
+                                    Any country with an existing and substantive mountain guiding association may join the IFMGA, provided it complies with the entry requirements, and indeed is encouraged to do so. 
+                                </p>
+                            </article>
+                        </div> 
+                        <div id="AboutCarouselGroup3" class="item CarouselGroupDiv GroupSize1">
+                            <article id="MtEverest" class="ArticleDiv">
+                                <img src="images/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="Mt Everest">
+                                <h3>Mount Everest</h3>
+                                <p>
+                                    As a teenager in the 1970s I read Maurice Herzog's Annapurna and have dreamed of climbing Mt Everest ever since, but for a long time the dream was no more realistic than going to the moon. 
+                                    Then along came the guide companies and I realized that I had a chance to fulfill this dream. I felt the responsible thing to do was wait until my young kids were grown before embarking 
+                                    on what could be a dangerous endeavor, so I put off this adventure for another few years. By 2008 I felt that it was time to get serious about this goal but I realized I needed some expedition 
+                                    and big mountain experience so I decided to climb the Seven Summits as my training.
+                                    I used a variety of guiding companies to get a taste of the different styles and methods and to find out what I was capable of. My first trip was to Nepal for a trek to Everest Base Camp 
+                                    and an ascent of Island Peak in the fall of 2008. This trip was unbelievably enjoyable and eye-opening. I'd been to Nepal many times over the years; in fact my daughter is Nepali 
+                                    (we adopted her in 1994 when she was two years old), but I did not have anywhere near enough appreciation for the strength and character of the Nepali people. Upon returning home 
+                                    I realized that people first go to Nepal for the scenery, adventures and challenge, but leave even more impressed with the culture and people. Growing up in Colorado I felt like 
+                                    I was quite familiar with mountains, but when you first go to Nepal you need to "re calibrate" your neck because they tower so high above. As an aside, my daughter is from a small village on the north side of Annapurna. 
+                                    The big valley below her village sits at 9,000' with 26,000' Dhaulagiri on the west and 23,000' Nilgiri on the east. I estimate that the two peaks are separated by perhaps 10 to 15 miles. The place is awe inspiring if you are a lover of mountains.
+                                </p>
+                            </article>
+                        </div> 
+                    </div>  <!-- carousel-inner -->
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </section>
+            
+            <section id = "Booking" class="BackgroundImageSection">
+                <h2>Courses / Tours</h2>
+
+                <div id="AvailableCourses" class="col-xm-12 col-sm-4">
+                    <h3>Upcoming Dates</h3>
+                    <a id="BikingAustria" class="Courses active" onclick="CourseText(1)">
+                        <p>Mountainbike Pro Course</p>
+                        April 24th, 2020 to April 29th, 2020
+                        <p class="CourseText">
+                            Mountain Bike Course for experienced Bikers in Kleinwalsertal.<br>
+                            Lift Tickets included.
+                        </p>
+                    </a>
+
+                    <a id="HeliskiingItaly" class="Tours" onclick="CourseText(2)">
+                        <p>Heliskiing Week</p>
+                        Jan 5th, 2021 to Jan 12th, 2021
+                        <p class="CourseText">
+                            The Heli Skiing Adventure for experienced Skiers and Snowboarders in the beautiful italian Alpes.<br>
+                            Five Hilicopter Flight per day<br>
+                            Overnight stays in hut incl. half board
+                        </p>
+                    </a>
+
+                    <a id="SkiTouringSwitzerland" class="Courses" onclick="CourseText(3)">
+                        <p>Ski Touring Beginners Course</p>
+                        Feb 2nd, 2021
+                        <p class="CourseText">
+                            This Course is for skiiers which want to find ne adventures aside the slopes.<br>
+                            Please rent proper Ski yourself
+                        </p>
+                    </a> 
+                </div>
+
+                <div id="calendar" class="col-xs-12 col-sm-4 col-sm-push-4">
+                    <iframe 
+                        src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;dates=20200413/20200413&amp;src=NHI0bWg5dmZydG9uazhhb2lkZjE5aWFhZXNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F4511E&amp;showTitle=0&amp;showNav=1&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0;" style="border:solid 1px #777" width="400" height="400">
+                    </iframe>
+                </div>
+
+                <svg id="CourseImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#ffffff">
+                    <path class="svg-white-bg" d="M0,0 L72.9,0 L72.9,1 L35,15 L27,99 L65,85 L73,1 L73,0 L100,0 L100,100 L0,100 z"/>
+                    <!--                Point     1    2     3     4      5      6      7     8     9      10       11     12 -->
+                </svg>
+            </section>
+
+            <section id = "Contact" class="BackgroundImageSection">
+                <h2>Contact</h2>
+
+                <div id="ContactFormularContainer" class="col-xs-12 col-sm-4 col-sm-push-3">
+                    <i class="far fa-paper-plane"></i>
+                    <form id="ContactFormular">
+                        <label for="yourName">Your Name*</label>
+                        <input type="text" id="yourName" name="yourName">
+                        <label for="eMail">Youre e-Mail*</label>
+                        <input type="email" id="eMail" name="eMail">
+                        <label for="Subject">Subject</label>
+                        <input type="text" id="Subject" name="Subject">
+                        <label for="Message">Your Message</label>
+                        <textarea id="Message" cols="40" rows="5"></textarea>
+                        <input type="submit" value="Send"/>
+                    </form>
+                </div>
+
+                <div id="ContactData" class="col-xs-12 col-sm-2 col-sm-push-3 vPrint">
+                    <div id="SocialMedia" class="hPrint">
+                        <a href="http://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="http://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                        <a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <address id="Adress">
+                        <i class="font-icon-18 fa fa-map-marker"></i>
+                        <p>John Smith<br>
+                            123 Mountain Street<br> 
+                            9999 Village City      
+                        </p>
+                    </address>
+                    <address id="Mail">
+                        <a href="mailto:info@besser-bewegt.de">
+                            <i class="font-icon-18 fa fa-envelope-o"></i><br>
+                            info@Mountain<br class="hPrint">Discovery.com
+                        </a>
+                    </address>
+                    <address id="Phone">
+                        <a href="tel:+491624543142">
+                            <i class="font-icon-18 fa fa-phone"></i><br>
+                            555 - 1234
+                        </a>
+                    </address>
+                </div>
+
+            </section>
+
+        </main>
+
+  		<footer>
+            <div class="header-separator">
+                <!-- the crazy triangulars -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 7.5" preserveAspectRatio="none" fill="#ffffff">
+                    <path class="svg-white-bg" d="M0,0 L0,7.5 L25,0 L100,7.5 L100,0 z"/>
+                </svg>
+            </div>
+            <img src="images/Logo2.png" alt="Mountain Discovery Logo"><br>
+  			<p>Copyright: Michael Wuttig</p>
+	  	</footer>
+    </body>
+    
+    <!-- 
+        help of: https://14ers.com/php14ers/tripreport.php?trip=9601
+    -->
+</html>
