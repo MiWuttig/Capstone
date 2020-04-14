@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.skip-link-screen-reader-text{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    flex: 1;
+}
+
+.StickyHeader{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+}
+
+h1 {
+    float: left !important;
+    height: 2vh !important;
+    margin-left: 3vw !important;
+    margin-right: 3vw !important;
+    margin-bottom: 3vh !important;
+    margin-top: 3vh !important;
+    padding: 0.1vw !important;
+    line-height: 1vh !important;
+    font-weight: normal !important;
+}
+
+h1 img {
+    height: 3vh;
+}
+
+h1 a, h1 a :hover{
+    color: #434745 !important; /* #434745 */
+    text-shadow: 1px 1px #dde0c6;
+    font-size: 25px;
+    -webkit-transition: color 2.5;
+    -moz-transition: color 2.5;
+    -o-transition: color 2.5;
+    transition: color 2.5;
+}
+
+.HeaderImg{
+    background-color: #cccccc;
+    background-image: url("../images/Main2.jpg");
+    height: 60vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.HeaderImg h2{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #1b1b1b;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 35vh;
+    left: 65vw;
+}
+
+.HeaderImg h2 a{
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #1b1b1b;
+    text-transform: none;
+    font-size: 4.5vw;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+.HeaderImg .header-separator{
+    z-index: 200;
+    position: absolute;
+    bottom: -0.9vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+#About:before, #Offer:before, #Booking:before, #Contact:before {
+    display: block; 
+    content: ""; 
+    height: 3.5vh; 
+    visibility: hidden; 
+}
+
+section h2 {
+    border-top: 1px solid #808d21;
+    padding: 20px;
+}
+
+footer {
+    background-image: url("../images/Iceland_Panorama.jpg");
+    height: 30vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 7.5vh;
+}
+
+footer .header-separator {
+    z-index: 200;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+footer img {
+    display: block;
+    height: 3vh;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+.BackgroundImageSection#Booking {
+    display: inline-block;
+    margin-top: 7.5vh;
+}
+
+.BackgroundImageSection#Booking h2{
+    background-color: #ffffff;
+}
+
+.BackgroundImageSection svg{
+    display: none;
+} 
+
+#AvailableCourses {
+    z-index: 1;
+    text-align: center;
+    height: 100%;
+}
+
+.Courses, .Tours {
+    display: inline-block;
+    border-radius: 3px;
+    width: 100%;
+    margin: 5px auto;
+    color: #ffffff !important;
+    max-height: 50px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.Courses .CourseText, .Tours .CourseText {
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    display: none;
+}
+
+.Courses.active, .Tours.active {
+    max-height: 150px;
+    border: solid 1px #ff0000;
+}
+
+.Courses.active .CourseText, .Tours.active .CourseText {
+    display: inline-block;
+}
+
+.Courses {
+    background-color: #575656d0;
+}
+
+.Tours {
+    background-color: #477947d0;
+}
+
+.Courses p, .Tours p {
+    font-weight: bold;
+    margin: 2px;
+}
+
+#calendar {
+    z-index: 1;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+
+#calendar iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#ContactFormularContainer, #Adress, #DAV, #Mail, #Phone, #SocialMedia {
+    background-color: #e8eee863;
+    border-left: solid 1px #808d21;
+    border-right: solid 1px #808d21;
+    
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#Adress, #DAV, #Mail, #Phone{
+    font-weight: bold;
+}
+
+form label{
+    margin: 10px auto 0px;
+    display: block;
+    font-weight: normal;
+}
+
+form input{
+    margin: auto;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+}
+
+form textarea{
+    margin: 0 auto 10px;
+    display: block;
+    overflow: auto;
+    white-space: normal;
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    color: #1b1b1b;
+}
+
+#Adress p, #Mail a, #Phone a{
+    text-decoration: none;
+    color: #1b1b1b;
+    font-size: 2vw;
+}
+
+#ContactFormularContainer i,
+#Mail i,
+#Phone i,
+#Adress i {
+    font-size: 30px;
+    color: #808d21;
+    margin: 5px auto;
+}
+
+#SocialMedia i {
+    font-size: 30px;
+    color: #1b1b1b;
+    margin: 5px;
+}
+
+.fa-facebook {color: #3b5998 !important}
+
+.fa-instagram {color: #E1306C !important}
+
+.fa-twitter {color: #00acee !important}
+
+.fa-pinterest {color: #c8232c!important}
+
+.fa-linkedin-in {color: #0e76a8 !important}
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 2vw;
+    } 
+
+    .BackgroundImageSection svg{
+        display: inline-flex;
+        background-image: url("../images/mountainbiking2.jpg");
+        background-color: #ffffff;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 400px;
+        width: 100%;
+    }
+
+    #Adress p, #Mail a, #Phone a{
+        font-size: 1vw;
+    }
+}
+
+@media print{
+    body *, .hPrint, .hPrint * {
+        visibility: hidden;
+        display: none;
+    }
+
+    .vPrint, .vPrint * {
+        visibility: visible;
+        display: block;
+    }
+
+    h1.vPrint * {
+        display: inline-block;
+    }
+
+    .vPrint {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
