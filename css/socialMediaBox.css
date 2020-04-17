@@ -1,5 +1,6 @@
-.socialMediaBox {
+.socialMediaBox{
     display: none;   
+    visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
