@@ -3,7 +3,7 @@
 }
 
 .socialMediaBox a {
-    display: block;
+    display: none;
     text-align: center;
     font-size: 0vh;
 }
@@ -32,5 +32,9 @@
         -moz-transition: 0.5s ease;
         -o-transition: 0.5s ease;
         transition: 0.5s ease;
+    }
+
+    .socialMediaBox a {
+        display: block;
     }
 }
