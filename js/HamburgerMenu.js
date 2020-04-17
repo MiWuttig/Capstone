@@ -74,13 +74,6 @@ function onScroll() {
                 section.offsetTop + section.offsetHeight > (fromTop+80)
                 ) {
                 link.classList.add("current");
-                var t1 = link.href;
-                var t2 = t1.endsWith("#Contact");
-                if (t2) {
-                    document.getElementsByClassName("socialMediaBox")[0].style.display = "none";
-                } else {
-                    document.getElementsByClassName("socialMediaBox")[0].style.display = "block";
-                };
             } else {
                 link.classList.remove("current");
             }
